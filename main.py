@@ -1,14 +1,20 @@
 import subprocess
-
-# Example shell command
-command = "ls -l"
+import pytesseract
+from PIL import Image
 
 # Execute the command
-result = subprocess.run(command, shell=True, capture_output=True, text=True)
 droid_command = subprocess.run(
     "droidbot --help", shell=True, capture_output=True, text=True
 )
 
 # Print the output
-print(result.stdout)
 print(droid_command.stdout)
+
+# Open an image file
+image = Image.open("example.png")
+
+# Use pytesseract to do OCR on the image
+text = pytesseract.image_to_string(image)
+
+# Print the extracted text
+print(text)
