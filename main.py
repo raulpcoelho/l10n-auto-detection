@@ -1,20 +1,33 @@
 import subprocess
 import pytesseract
-from PIL import Image
+from PIL import Image, ImageDraw
 
-# Execute the command
-droid_command = subprocess.run(
-    "droidbot --help", shell=True, capture_output=True, text=True
-)
 
-# Print the output
-print(droid_command.stdout)
+droid_command: str = "droidbot --help"
 
-# Open an image file
+process = subprocess.run(droid_command, shell=True, capture_output=True, text=True)
+
+print(process.stdout)
+
 image = Image.open("example.png")
 
-# Use pytesseract to do OCR on the image
 text = pytesseract.image_to_string(image)
 
-# Print the extracted text
 print(text)
+
+data = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
+
+draw = ImageDraw.Draw(image)
+for i, word in enumerate(data["text"]):
+    if word.find("...") != -1:
+        print(f"Found ellipsis on word: {word} at index: {i}")
+
+        x, y, w, h = (
+            data["left"][i],
+            data["top"][i],
+            data["width"][i],
+            data["height"][i],
+        )
+        draw.rectangle([x, y, x + w, y + h], outline="red", width=2)
+
+image.show()
