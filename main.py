@@ -1,33 +1,11 @@
-import subprocess
-import pytesseract
-from PIL import Image, ImageDraw
+from droidbot_explore import run_droidbot, read_files
+from draw_image import draw_image
 
+apk_path: str = "/home/rpc/Downloads/apks/VLC\ for\ Android_3.6.3_APKPure.apk"
+exploration_time: int = 30
+output_dir: str = "droidbot_dump"
 
-droid_command: str = "droidbot --help"
+run_droidbot(apk_path, exploration_time, output_dir)
+read_files(output_dir + "/states")
 
-process = subprocess.run(droid_command, shell=True, capture_output=True, text=True)
-
-print(process.stdout)
-
-image = Image.open("example.png")
-
-text = pytesseract.image_to_string(image)
-
-print(text)
-
-data = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
-
-draw = ImageDraw.Draw(image)
-for i, word in enumerate(data["text"]):
-    if word.find("...") != -1:
-        print(f"Found ellipsis on word: {word} at index: {i}")
-
-        x, y, w, h = (
-            data["left"][i],
-            data["top"][i],
-            data["width"][i],
-            data["height"][i],
-        )
-        draw.rectangle([x, y, x + w, y + h], outline="red", width=2)
-
-image.show()
+# draw_image("example.png")
