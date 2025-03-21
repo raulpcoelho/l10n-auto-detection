@@ -1,5 +1,4 @@
 import subprocess
-import os
 
 
 def run_droidbot(apk_path: str, exploration_time: int, output_dir: str) -> None:
@@ -14,8 +13,3 @@ def run_droidbot(apk_path: str, exploration_time: int, output_dir: str) -> None:
     print("STDERR:", process.stderr)
 
     print("Finished running droidbot")
-
-
-def read_files(files_dir: str):
-    json_files = [f for f in os.listdir(files_dir) if f.endswith(".json")]
-    print("JSON files:", json_files)
