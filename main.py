@@ -17,4 +17,4 @@ with open("dictionaries/ignore_pt-br.txt", "r", encoding="utf-8") as file:
 # run_droidbot(apk_path, exploration_time, output_dir)
 read_files(output_dir + "/states", acceptable_words, ignore_words)
 
-# draw_image("example.png")
+draw_image("example.png", "output_images", [])

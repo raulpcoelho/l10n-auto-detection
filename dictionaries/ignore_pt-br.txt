@@ -6,6 +6,7 @@ facebook
 google
 kwai
 linkedin
+núm
 qua
 qui
 sab

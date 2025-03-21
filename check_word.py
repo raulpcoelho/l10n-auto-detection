@@ -16,6 +16,7 @@ def ignore_word(word, ignore_list):
 
 def check_word(word, acceptable_list, ignore_list):
     word = word.lower()
+    word = word.rstrip("!?,.:")
     if ignore_word(word, ignore_list):
         return True
     if word in acceptable_list:
