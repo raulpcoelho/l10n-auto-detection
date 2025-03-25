@@ -25,8 +25,8 @@ def read_files(files_dir: str, acceptable_list: list, ignore_list: list) -> None
 def read_json_file(file_path: str):
     all_words = []
     with open(file_path, "r", encoding="utf-8") as f:
-        dados = json.load(f)
-        views = dados["views"]
+        data = json.load(f)
+        views = data["views"]
         for view in views:
             text = view.get("text")
             if text is None:

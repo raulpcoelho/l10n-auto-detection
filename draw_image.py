@@ -11,6 +11,8 @@ def draw_image(image_path, output_images_path, words_to_highlight):
 
     draw = ImageDraw.Draw(image)
     for i, word in enumerate(data["text"]):
+        if len(word) == 0:
+            continue
         if word.find("...") != -1:
             print(f"Found ellipsis on word: {word} at index: {i}")
             x, y, w, h = (
