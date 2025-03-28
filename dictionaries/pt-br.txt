@@ -234106,6 +234106,8 @@ seletividades
 seletivo
 seletivos
 seleto
+seletor
+seletores
 seletos
 selim
 selins

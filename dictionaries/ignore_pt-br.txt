@@ -15,3 +15,5 @@ sex
 shein
 tiktok
 vlc
+ok
+sms
