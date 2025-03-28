@@ -4,7 +4,12 @@ from check_word import check_word
 from draw_image import draw_image
 
 
-def read_files(files_dir: str, acceptable_list: list, ignore_list: list) -> None:
+def read_files(
+    files_dir: str,
+    acceptable_list: list,
+    ignore_list: list,
+    output_directory: str = "output_images",
+) -> None:
     json_files = [f for f in os.listdir(files_dir) if f.endswith(".json")]
     for json_file in json_files:
         file_name = os.path.splitext(json_file)[0]
@@ -17,7 +22,7 @@ def read_files(files_dir: str, acceptable_list: list, ignore_list: list) -> None
                 not_acceptable_words.append(word)
         image_name = file_name.replace("state", "screen")
         draw_image(
-            f"{files_dir}/{image_name}.png", "output_images", not_acceptable_words
+            f"{files_dir}/{image_name}.png", output_directory, not_acceptable_words
         )
         print("\n\n")
 

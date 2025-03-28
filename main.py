@@ -1,11 +1,22 @@
+import argparse
 from droidbot_explore import run_droidbot
 from draw_image import draw_image
 from read_files import read_files
 from remove_duplicates import remove_duplicates
 
-apk_path: str = "/home/rpc/Downloads/apks/VLC\ for\ Android_3.6.3_APKPure.apk"
-exploration_time: int = 30
-output_directory: str = "output_images"
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--output-directory", "-o", help="Output images path", default="output_images"
+)
+parser.add_argument(
+    "--exploration-time", "-e", help="Exploration time in seconds", default=30
+)
+parser.add_argument("--apk-path", "-a", help="APK file path", required=True)
+parser.add_argument(
+    "--skip-droidbot", "-s", action="store_true", help="Skip droidbot exploration"
+)
+args = parser.parse_args()
+
 
 acceptable_words = []
 with open("dictionaries/pt-br.txt", "r", encoding="utf-8") as file:
@@ -15,11 +26,13 @@ ignore_words = []
 with open("dictionaries/ignore_pt-br.txt", "r", encoding="utf-8") as file:
     ignore_words = [line.strip() for line in file]
 
-# run_droidbot(apk_path, exploration_time, "droidbot_dump")
+if not args.skip_droidbot:
+    run_droidbot(args.apk_path, args.exploration_time, "droidbot_dump")
 
-# Example usage
-image_directory = "/home/rpc/Desktop/l10n-auto/droidbot_dump/states"
+image_directory = "droidbot_dump/states"
 remove_duplicates(image_directory)
-read_files("droidbot_dump" + "/states", acceptable_words, ignore_words)
+read_files(
+    "droidbot_dump" + "/states", acceptable_words, ignore_words, args.output_directory
+)
 
-draw_image("example.png", output_directory, [])
+draw_image("example.png", args.output_directory, [])
