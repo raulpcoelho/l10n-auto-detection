@@ -88386,6 +88386,7 @@ desinibida
 desinibidas
 desinibido
 desinibidos
+desinstalar
 desintegra
 desintegrá
 desintegração
@@ -88749,6 +88750,7 @@ deslizamento
 deslizamo
 deslizamos
 deslizando
+deslizante
 deslizar
 deslizara
 deslizará
@@ -114380,6 +114382,7 @@ enquadres
 enquadro
 enquadrou
 enquanto
+enquete
 enrabicha
 enrabichá
 enrabichado
@@ -137369,6 +137372,7 @@ faturado
 faturai
 faturais
 faturam
+faturamento
 faturamo
 faturamos
 faturando
@@ -155564,6 +155568,8 @@ inclusa
 inclusão
 inclusas
 inclusive
+inclusivo
+inclusivos
 incluso
 inclusões
 inclusos
@@ -159640,6 +159646,7 @@ insatisfeitas
 insatisfeito
 insatisfeitos
 inscreva
+inscreva-se
 inscrevais
 inscrevam
 inscrevamo
@@ -159654,6 +159661,7 @@ inscrevemo
 inscrevemos
 inscrevendo
 inscrever
+inscrever-se
 inscrevera
 inscreverá
 inscreveram
@@ -198602,6 +198610,7 @@ potenciais
 potencial
 potencialidade
 potencialidades
+potencialize
 potencialmente
 potências
 potentado
@@ -204264,6 +204273,8 @@ promissórias
 promitente
 promitentes
 promoção
+promocional
+promocionais
 promoções
 promontório
 promontórios
@@ -253606,6 +253617,7 @@ turbilhones
 turbilhono
 turbilhonou
 turbina
+turbinar
 turbinada
 turbinadas
 turbinado
@@ -255794,6 +255806,7 @@ valas
 Valdemar
 vale
 valê
+vale-presente
 valei
 valeiro
 valeiros
@@ -255837,6 +255850,7 @@ valeríeis
 valermo
 valermos
 vales
+vales-presente
 valesse
 valêsseis
 valessem
