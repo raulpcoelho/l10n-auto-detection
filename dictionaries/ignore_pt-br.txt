@@ -25,4 +25,12 @@ hello
 world
 wifi
 wi-fi
-
+apps
+bugs
+smartphone
+png
+kb
+mb
+gb
+download
+downloads
