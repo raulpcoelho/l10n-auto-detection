@@ -1,4 +1,5 @@
 import argparse
+import os
 from droidbot_explore import run_droidbot
 from draw_image import draw_image
 from read_files import read_files
@@ -30,7 +31,10 @@ if not args.skip_droidbot:
     run_droidbot(args.apk_path, args.exploration_time, "droidbot_dump")
 
 image_directory = "droidbot_dump/states"
-remove_duplicates(image_directory)
+total, removed = remove_duplicates(image_directory)
+os.makedirs(args.output_directory, exist_ok=True)
+with open(f"{args.output_directory}/removed.txt", "a+", encoding="utf-8") as file:
+    file.write(f"Removed {removed} images from {total}\n")
 read_files(
     "droidbot_dump" + "/states", acceptable_words, ignore_words, args.output_directory
 )
