@@ -43,6 +43,7 @@ world
 microsoft
 apple
 email
+e-mail
 quiz
 quizzes
 picpay

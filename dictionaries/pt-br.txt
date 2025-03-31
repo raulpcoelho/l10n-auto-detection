@@ -211498,6 +211498,7 @@ recanto
 recantos
 recapitulação
 recapitulações
+recapitular
 recaptura
 recapturá
 recapturado

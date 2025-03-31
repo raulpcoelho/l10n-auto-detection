@@ -34,6 +34,8 @@ tablet
 checklist
 hello
 world
+microsoft
+apple
 email
 e-mail
 quiz
