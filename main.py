@@ -34,5 +34,3 @@ remove_duplicates(image_directory)
 read_files(
     "droidbot_dump" + "/states", acceptable_words, ignore_words, args.output_directory
 )
-
-draw_image("example.png", args.output_directory, [])

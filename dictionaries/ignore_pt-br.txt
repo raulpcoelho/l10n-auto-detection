@@ -17,3 +17,6 @@ tiktok
 vlc
 ok
 sms
+android
+github
+bem-vindo

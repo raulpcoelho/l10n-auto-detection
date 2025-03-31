@@ -40506,6 +40506,7 @@ belos
 beltrano
 Belzebu
 bem
+bem-vindo
 bemol
 benção
 bênção
