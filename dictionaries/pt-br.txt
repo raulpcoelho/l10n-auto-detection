@@ -24827,6 +24827,7 @@ apressou
 aprimora
 aprimorá
 aprimorado
+aprimorados
 aprimorai
 aprimorais
 aprimoram
@@ -35550,6 +35551,7 @@ automatizá
 automatização
 automatizações
 automatizado
+automatizados
 automatizai
 automatizais
 automatizam
@@ -36287,6 +36289,8 @@ avassalemos
 avassales
 avassalo
 avassalou
+avatar
+avatares
 ave
 aveia
 aveio
@@ -67812,6 +67816,7 @@ copiem
 copiemo
 copiemos
 copies
+copiloto
 copinho
 copinhos
 copio
@@ -120752,6 +120757,7 @@ escandinávia
 Escandinávia
 escandinavo
 escandinavos
+escanear
 escangalha
 escangalhá
 escangalhado
@@ -178644,6 +178650,8 @@ monógamo
 monógamos
 monografia
 monografias
+monograma
+monogramas
 monóide
 monóides
 monolítica
@@ -188001,6 +188009,8 @@ palafitas
 palanque
 palanques
 palavra
+palavra-chave
+palavras-chave
 palavrão
 palavras
 palavreá

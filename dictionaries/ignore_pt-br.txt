@@ -32,6 +32,7 @@ png
 kb
 mb
 gb
+tb
 download
 downloads
 premium
@@ -43,6 +44,7 @@ world
 microsoft
 apple
 email
+emails
 e-mail
 quiz
 quizzes
@@ -52,3 +54,14 @@ youtube
 link
 english
 cashback
+pdfs
+pdf
+mobile
+usb
+online
+web
+sd
+design
+chat
+offline
+
