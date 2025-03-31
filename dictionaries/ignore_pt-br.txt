@@ -23,4 +23,6 @@ bem-vindo
 login
 hello
 world
+wifi
+wi-fi
 
