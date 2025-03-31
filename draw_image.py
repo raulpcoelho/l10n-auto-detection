@@ -30,6 +30,15 @@ def draw_image(image_path, output_images_path, words_to_highlight):
                 h -= 10
 
             draw.rectangle([x, y, x + w, y + h], outline="red", width=2)
+
+            os.makedirs(output_images_path, exist_ok=True)
+            with open(
+                f"{output_images_path}/words.txt", "a+", encoding="utf-8"
+            ) as file:
+                file.seek(0)
+                existing_words = file.read().splitlines()
+                if word + "(possível erro de elipse)" not in existing_words:
+                    file.write(word + "(possível erro de elipse)" + "\n")
         if word in words_to_highlight:
             highlighted = True
             draw = ImageDraw.Draw(image)
@@ -43,6 +52,15 @@ def draw_image(image_path, output_images_path, words_to_highlight):
                 data["height"][i],
             )
             draw.rectangle([x, y, x + w, y + h], outline="red", width=2)
+
+            os.makedirs(output_images_path, exist_ok=True)
+            with open(
+                f"{output_images_path}/words.txt", "a+", encoding="utf-8"
+            ) as file:
+                file.seek(0)
+                existing_words = file.read().splitlines()
+                if word not in existing_words:
+                    file.write(word + "\n")
     if highlighted:
         os.makedirs(output_images_path, exist_ok=True)
         output_path = output_images_path + "/" + image_path.split("/")[-1]

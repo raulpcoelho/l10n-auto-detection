@@ -18,7 +18,7 @@ def read_files(
         all_words_in_file = read_json_file(f"{files_dir}/{json_file}")
         for word in all_words_in_file:
             if not check_word(word, acceptable_list, ignore_list):
-                print(f"word: {word} is not acceptable")
+                # print(f"word: {word} is not acceptable")
                 not_acceptable_words.append(word)
         image_name = file_name.replace("state", "screen")
         draw_image(
