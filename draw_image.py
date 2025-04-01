@@ -60,7 +60,9 @@ def draw_image(image_path, output_images_path, words_to_highlight):
                 file.seek(0)
                 existing_words = file.read().splitlines()
                 if word not in existing_words:
-                    file.write(word + "\n")
+                    file.write(
+                        word.replace(".", "").replace(",", "").replace(":", "") + "\n"
+                    )
     if highlighted:
         os.makedirs(output_images_path, exist_ok=True)
         output_path = output_images_path + "/" + image_path.split("/")[-1]

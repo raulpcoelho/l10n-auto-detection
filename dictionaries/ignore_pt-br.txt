@@ -64,4 +64,24 @@ sd
 design
 chat
 offline
+jan
+fev
+mar
+abr
+mai
+jun
+jul
+ago
+set
+out
+nov
+cm
+cache
+df
+tv
+emoji
+streaming
+id
+feedback
+site
 

@@ -23838,6 +23838,7 @@ apoiávamos
 apoiavas
 apoiáveis
 apóie
+apoie
 apoiei
 apoieis
 apóiem
@@ -39863,6 +39864,7 @@ batavo
 batavos
 bate
 batê
+bate-papo
 batedeira
 batedeiras
 batedor
@@ -81524,6 +81526,8 @@ desativa
 desativá
 desativação
 desativações
+desativada
+desativadas
 desativado
 desativai
 desativais
@@ -101010,6 +101014,7 @@ dueles
 duelista
 duelistas
 duelo
+duelos
 duelou
 duende
 duendes
@@ -218682,6 +218687,8 @@ reivindica
 reivindicá
 reivindicação
 reivindicações
+reivindicada
+reivindicadas
 reivindicado
 reivindicai
 reivindicais
@@ -233872,6 +233879,8 @@ seguida
 seguidamente
 seguidas
 seguido
+seguidor
+seguidores
 seguidos
 seguíeis
 seguimento
@@ -234302,6 +234311,8 @@ semidiscretizemos
 semidiscretizes
 semidiscretizo
 semidiscretizou
+semifinal
+semifinais
 semigráfica
 semigráficas
 semigráfico
@@ -248270,6 +248281,8 @@ torçamos
 torças
 torce
 torcê
+torcedor
+torcedores
 torcei
 torceis
 torcem
@@ -251801,6 +251814,7 @@ tréguas
 treina
 treiná
 treinado
+treinador
 treinai
 treinais
 treinam
@@ -259531,6 +259545,8 @@ visionários
 visita
 visitá
 visitação
+visitada
+visitadas
 visitado
 visitai
 visitais

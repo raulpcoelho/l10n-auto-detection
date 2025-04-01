@@ -11,7 +11,7 @@ def ignore_word(word, ignore_list):
         word,
     ):
         return True
-    if re.search(r"[^\w\s.,!?-]", word) or word == "." or word == "":
+    if re.search(r"[^\w\s.,!?-]", word) or len(word) == 1 or word == "":
         return True
     return False
 
