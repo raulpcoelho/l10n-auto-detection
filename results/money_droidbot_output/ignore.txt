@@ -1,0 +1,16 @@
+arabic
+bosanski
+dansk
+deutsch
+english
+estonian
+persian
+mmex
+money
+manager
+moneymanagerex
+slovenian
+serbian
+swedish
+tagalog
+thai
